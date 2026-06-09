@@ -1,168 +1,87 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Redline Racing</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0b0b0b;
-      color: white;
-      overflow-x: hidden;
-    }
-
-    /* 🔴 Garage glow background */
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: radial-gradient(circle at 50% 20%, rgba(255,0,0,0.25), transparent 60%),
-                  radial-gradient(circle at 20% 80%, rgba(255,0,0,0.10), transparent 50%);
-      z-index: -2;
-    }
-
-    /* ⚡ Speed lines animation */
-    .speedlines {
-      position: fixed;
-      width: 200%;
-      height: 200%;
-      top: -50%;
-      left: -50%;
-      background: repeating-linear-gradient(
-        120deg,
-        rgba(255,0,0,0.05) 0px,
-        rgba(255,0,0,0.05) 2px,
-        transparent 2px,
-        transparent 12px
-      );
-      animation: moveLines 6s linear infinite;
-      z-index: -1;
-    }
-
-    @keyframes moveLines {
-      0% { transform: translateX(0) translateY(0); }
-      100% { transform: translateX(-200px) translateY(200px); }
-    }
-
-    header {
-      text-align: center;
-      padding: 40px 20px;
-      border-bottom: 2px solid #ff0000;
-      background: rgba(0,0,0,0.6);
-      backdrop-filter: blur(6px);
-    }
-
-    header h1 {
-      font-size: 48px;
-      margin: 0;
-      letter-spacing: 3px;
-      color: #ff0000;
-      text-shadow: 0 0 20px #ff0000;
-      animation: pulse 2s infinite;
-    }
-
-    @keyframes pulse {
-      0% { text-shadow: 0 0 10px #ff0000; }
-      50% { text-shadow: 0 0 25px #ff0000; }
-      100% { text-shadow: 0 0 10px #ff0000; }
-    }
-
-    header p {
-      color: #ccc;
-      margin-top: 10px;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
-
-    .card {
-      background: rgba(20,20,20,0.9);
-      padding: 20px;
-      margin: 15px 0;
-      border-left: 4px solid #ff0000;
-      border-radius: 8px;
-      box-shadow: 0 0 15px rgba(255,0,0,0.1);
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 12px 18px;
-      background: #ff0000;
-      color: white;
-      text-decoration: none;
-      margin-top: 10px;
-      border-radius: 5px;
-      font-weight: bold;
-      transition: 0.2s;
-    }
-
-    .btn:hover {
-      transform: scale(1.05);
-      background: #cc0000;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #777;
-      border-top: 1px solid #222;
-      margin-top: 40px;
-    }
-  </style>
+  <title>Redline Mobile Services</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="speedlines"></div>
-
 <header>
-  <h1>REDLINE RACING</h1>
-  <p>Precision • Speed • Mobile Performance Service</p>
+  <h1>REDLINE MOBILE SERVICES</h1>
+  <p>Car Detailing • Yard Work • Racing-Inspired Hustle</p>
 </header>
 
 <div class="container">
 
   <div class="card">
-    <h2>🏁 Built Like a Race Team</h2>
-    <p>Every job is handled with discipline, speed, and precision.</p>
-  </div>
-
-  <div class="card">
     <h2>🚗 Car Detailing</h2>
-    <p>$20 – $60 — Interior + Exterior Restoration</p>
+    <p>$20 – $60</p>
+    <p>Interior & exterior cleaning</p>
   </div>
 
   <div class="card">
-    <h2>🌿 Yard & Property Work</h2>
-    <p>$20 – $50 — Fast, clean, reliable service</p>
+    <h2>🌿 Yard Work</h2>
+    <p>$20 – $50</p>
+    <p>Mowing, cleanup, basic outdoor work</p>
   </div>
 
   <div class="card">
-    <h2>📅 Book a Session</h2>
+    <h2>📅 Book a Service</h2>
+    <p>Pick a time that works for you:</p>
+
     <a class="btn" href="https://calendar.app.google/MBGxW4rj7pH9Lf7QA" target="_blank">
       BOOK NOW
     </a>
+
+    <p><em>Instant booking through Google Calendar</em></p>
   </div>
 
   <div class="card">
-    <h2>⚡ Emergency Pit Stop Service</h2>
-    <p>Same-day urgent jobs available when slots are open.</p>
+    <h2>⚡ Emergency / Same-Day Booking</h2>
+    <p>If you need urgent or same-day service, contact me directly.</p>
 
-    <a class="btn" href="mailto:redlinehenry12@gmail.com">EMAIL</a>
-    <a class="btn" href="sms:+14143359918">TEXT</a>
+    <p><strong>Fast contact options:</strong></p>
+
+    <a class="btn" href="mailto:redlinehenry12@gmail.com">
+      EMAIL ME NOW
+    </a>
+
+    <a class="btn" href="sms:+14143359918">
+      TEXT FOR FAST BOOKING
+    </a>
+
+    <p><em>Response time: usually within 1–2 hours</em></p>
+  </div>
+
+  <div class="card">
+    <h2>ℹ️ About This Service</h2>
+    <p>
+      Mobile service means I come to you. I focus on showing up on time, doing quality work,
+      and building trust with every job I take.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>⭐ Why Choose Redline Mobile Services</h2>
+    <ul>
+      <li>I come to you (mobile service)</li>
+      <li>Always on time and reliable</li>
+      <li>Clean, careful, and detail-focused work</li>
+      <li>Simple online booking system</li>
+      <li>Honest pricing with no surprises</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <a class="btn" href="about.html">Why I Do This</a>
+    <a class="btn" href="contact.html">Contact</a>
   </div>
 
 </div>
 
 <footer>
-  © 2026 Redline Racing — Built for Performance
+  © 2026 Redline Mobile Services
 </footer>
 
 </body>
